@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    tools:context=".layout"
+    android:orientation="vertical">
+
+
+
+    <RelativeLayout
+          android:layout_width="match_parent"
+          android:layout_height="50sp">
+
+
+        <ImageView
+            android:id="@+id/ic_back"
+            android:layout_width="20sp"
+            android:layout_height="30sp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10sp"
+            android:layout_marginLeft="10sp"
+            android:background="@drawable/ic_backk"
+            android:backgroundTint="@color/black"
+            app:tint="@color/black" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10sp"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:text="Exit"
+            android:id="@+id/ic_exit"
+            />
+
+    </RelativeLayout>
+
+    <ProgressBar
+        android:id="@+id/quiz_timer"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="4sp"
+        android:indeterminate="false"
+        android:maxHeight="12dp"
+        android:minHeight="12dp"
+        android:progress="10"
+        android:max="20"
+        android:theme="@style/Timer"
+        app:backgroundColor="@color/white"
+       />
+
+<androidx.cardview.widget.CardView
+    app:cardCornerRadius="10sp"
+    android:layout_marginStart="7sp"
+    android:layout_marginRight="7sp"
+    android:layout_marginLeft= "7sp"
+    android:layout_marginTop="20sp"
+    android:layout_marginEnd= "7sp"
+    android:layout_width="match_parent"
+    android:layout_height="150dp">
+
+
+    <TextView
+        android:textColor="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id ="@+id/card_quetion"
+        android:gravity="center"
+        android:layout_margin="@dimen/_10sdp"
+        android:layout_gravity="center"
+        android:text="@string/app_name"
+
+       />
+</androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:onClick="OptonAClick"
+        android:id="@+id/cardA"
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:layout_marginStart="10sp"
+        android:layout_marginLeft="10sp"
+        android:layout_marginTop="20sp"
+        android:layout_marginEnd="10sp"
+        android:layout_marginRight="10sp"
+
+        app:cardCornerRadius="5sp">
+
+
+        <TextView
+            android:id="@+id/card_optiona"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="A"
+            android:textColor="@color/black"
+
+            />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:onClick="optionClickB"
+        android:id="@+id/cardB"
+        app:cardCornerRadius="5sp"
+        android:layout_marginStart="10sp"
+        android:layout_marginRight="10sp"
+        android:layout_marginLeft= "10sp"
+        android:layout_marginTop="20sp"
+        android:layout_marginEnd= "10sp"
+        android:layout_width="match_parent"
+        android:layout_height="50sp">
+
+
+        <TextView
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id ="@+id/card_optionb"
+            android:layout_gravity="center"
+            android:text="B"
+
+            />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:onClick="optionClickC"
+        android:id="@+id/cardC"
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:layout_marginStart="10sp"
+        android:layout_marginLeft="10sp"
+        android:layout_marginTop="20sp"
+        android:layout_marginEnd="10sp"
+        android:layout_marginRight="10sp"
+
+        app:cardCornerRadius="5sp">
+
+
+        <TextView
+            android:id="@+id/card_optionc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="C"
+            android:textColor="@color/black"
+
+            />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+            android:onClick="optionClickD"
+        android:id="@+id/cardD"
+        app:cardCornerRadius="5sp"
+        android:layout_marginStart="10sp"
+        android:layout_marginRight="10sp"
+        android:layout_marginLeft= "10sp"
+        android:layout_marginTop="20sp"
+        android:layout_marginEnd= "10sp"
+        android:layout_width="match_parent"
+        android:layout_height="50sp">
+
+
+        <TextView
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id ="@+id/card_optiond"
+            android:layout_gravity="center"
+            android:text="D"
+
+            />
+    </androidx.cardview.widget.CardView>
+
+
+    <LinearLayout
+        android:id="@+id/nextBtn"
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:layout_marginTop="50sp"
+        android:background="@drawable/next_btn_shape"
+        android:layout_marginStart="35sp"
+        android:layout_marginRight="35sp"
+        android:gravity="center"
+        android:layout_marginEnd="35sp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NEXT"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:layout_gravity="center"
+            android:textAllCaps="true"
+
+            />
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
